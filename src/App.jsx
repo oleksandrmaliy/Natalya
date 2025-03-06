@@ -1,11 +1,13 @@
-import HeroBlock from './components/hero';
+import HeroBlock from "./components/hero";
+import Test from "./components/test";
 
 function App() {
-	return (
-		<>
-   			<HeroBlock />
-		</>
-	);
+  return (
+    <>
+      <Test />
+      <HeroBlock />
+    </>
+  );
 }
 
 export default App;
