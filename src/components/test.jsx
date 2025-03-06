@@ -36,17 +36,6 @@ const Test = () => {
     }
   }, [effect2, showText]);
 
-  // useLayoutEffect(() => {
-  // 	if (effect && !showText) {
-  // 		requestAnimationFrame(() => {
-  // 			document.getElementById(identity)?.scrollIntoView({
-  // 				behavior: 'smooth',
-  // 				block: 'center',
-  // 			});
-  // 		});
-  // 	}
-  // }, [effect, showText]);
-
   const handleClick = () => {
     setShowText(!showText);
     setEffect2(true);
@@ -85,14 +74,13 @@ const Test = () => {
       </div>
       <div
         id="hero"
-        // className="mb-4 grid h-fit grid-cols-1 border-4 border-red-500 bg-green-100 p-4 sm:mb-5 sm:p-5 md:mb-6 md:grid md:grid-cols-3 md:gap-6 md:p-6 lg:mb-7 lg:gap-7 lg:p-7 xl:mb-8 xl:gap-8 xl:p-8"
-        className="mb-4 grid grid-cols-1 border-4 border-red-500 bg-green-100 p-4 sm:mb-5 sm:p-5 md:mb-6 md:grid md:grid-cols-3 md:gap-6 md:p-6 lg:mb-7 lg:gap-7 lg:p-7 xl:mb-8 xl:gap-8 xl:p-8"
+        className="mb-4 grid grid-cols-1 border-4 border-red-500 bg-green-100 p-4 sm:mb-5 sm:p-5 md:mb-6 md:grid-cols-3 md:gap-6 md:p-6 lg:mb-7 lg:gap-7 lg:p-7 xl:mb-8 xl:gap-8 xl:p-8"
       >
         <div className="mb-4 border-4 border-red-500 sm:mb-5 md:relative md:mb-0">
           <img
             src={natalya}
             alt="Natalya"
-            className="shadow-all-green -mt-6 w-2/3 rounded-full border-8 border-white sm:-mt-7 md:relative md:-top-12 md:-left-0 md:w-full lg:-top-16 xl:-top-20"
+            className="mt-6 w-2/3 rounded-full border-8 border-white shadow-2xl shadow-blue-700 sm:-mt-7 md:relative md:-top-12 md:-left-0 md:w-full lg:-top-16 xl:-top-20"
           />
         </div>
 

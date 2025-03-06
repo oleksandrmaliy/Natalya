@@ -48,7 +48,7 @@ const HeroBlock = () => {
         <img
           src={natalya}
           alt="Natalya"
-          className="shadow-all-green -mt-6 w-2/3 rounded-full border-8 border-white sm:-mt-7 md:relative md:-top-12 md:-left-0 md:w-full lg:-top-16 xl:-top-20"
+          className="mt-6 w-2/3 rounded-full border-8 border-white sm:-mt-7 md:relative md:-top-12 md:-left-0 md:w-full lg:-top-16 xl:-top-20"
         />
       </div>
 
