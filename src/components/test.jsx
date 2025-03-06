@@ -1,13 +1,28 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const Test = () => {
   const [text, setText] = useState(false);
+  const [effect, setEffect] = useState(false);
+
+  const identity = "test";
+
+  useEffect(() => {
+    if (effect & !text) {
+      document.getElementById(identity)?.scrollIntoView({
+        behavior: "smooth",
+        block: "center",
+      });
+    }
+  }, [effect, text]);
+
   const show = () => {
     setText(!text);
+    setEffect(true);
   };
+
   return (
     <>
-      <div className="mb-16 h-auto w-1/2 border-4 border-blue-500">
+      <div id="test" className="mb-16 h-auto w-1/2 border-4 border-blue-500">
         <p>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit
           maiores voluptatem optio! Eveniet nam ad dicta delectus molestias
