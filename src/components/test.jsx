@@ -30,7 +30,7 @@ const Test = () => {
           eius sunt vitae sit velit.
         </p>
         {text && (
-          <p>
+          <p className="bg-amber-200">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi modi
             temporibus officiis nam, similique error distinctio rerum dolorum
             fugiat id ducimus dolorem a culpa? Corrupti placeat dolores nulla
