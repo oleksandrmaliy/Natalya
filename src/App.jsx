@@ -1,11 +1,11 @@
-import HeroBlock from "./components/hero";
+// import HeroBlock from "./components/hero";
 import Test from "./components/test";
 
 function App() {
   return (
     <>
       <Test />
-      <HeroBlock />
+      {/* <HeroBlock /> */}
     </>
   );
 }

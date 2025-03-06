@@ -80,11 +80,11 @@ const Test = () => {
           <img
             src={natalya}
             alt="Natalya"
-            className="mt-6 w-2/3 rounded-full border-8 border-white shadow-2xl shadow-blue-700 sm:-mt-7 md:relative md:-top-12 md:-left-0 md:w-full lg:-top-16 xl:-top-20"
+            className="w-2/3 rounded-full border-8 border-white shadow-2xl shadow-blue-700"
           />
         </div>
 
-        <div className="col-span-2 flex min-h-full flex-col justify-between">
+        <div className="col-span-2 flex flex-col justify-between">
           <div className="mb-4">
             <div className="mb-4">
               <p className="mb-4 indent-14">
