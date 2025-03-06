@@ -7,7 +7,7 @@ const Test = () => {
   };
   return (
     <>
-      <div>
+      <div className="mb-16 h-auto w-1/2 border-4 border-blue-500">
         <p>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit
           maiores voluptatem optio! Eveniet nam ad dicta delectus molestias
@@ -34,8 +34,5 @@ const Test = () => {
     </>
   );
 };
-
-
-
 
 export default Test;
