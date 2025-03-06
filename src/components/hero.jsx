@@ -29,7 +29,7 @@ const HeroBlock = () => {
 	// }, [effect, showText]);
 
 	const handleClick = () => {
-		setShowText((prev) => !prev);
+		setShowText(!showText);
 		setEffect(true);
 	};
 
@@ -42,9 +42,7 @@ const HeroBlock = () => {
 		<div
 			id='hero'
 			// className="mb-4 grid h-fit grid-cols-1 border-4 border-red-500 bg-green-100 p-4 sm:mb-5 sm:p-5 md:mb-6 md:grid md:grid-cols-3 md:gap-6 md:p-6 lg:mb-7 lg:gap-7 lg:p-7 xl:mb-8 xl:gap-8 xl:p-8"
-			className={`mb-4 grid h-fit grid-cols-1 border-4 border-red-500 bg-green-100 p-4 sm:mb-5 sm:p-5 md:mb-6 md:grid md:grid-cols-3 md:gap-6 md:p-6 lg:mb-7 lg:gap-7 lg:p-7 xl:mb-8 xl:gap-8 xl:p-8 ${
-				showText ? 'h-auto' : 'h-fit'
-			}`} // Dynamically adjust the height
+			className='mb-4 grid grid-cols-1 border-4 border-red-500 bg-green-100 p-4 sm:mb-5 sm:p-5 md:mb-6 md:grid md:grid-cols-3 md:gap-6 md:p-6 lg:mb-7 lg:gap-7 lg:p-7 xl:mb-8 xl:gap-8 xl:p-8' 
 		>
 			<div className='mb-4 border-4 border-red-500 sm:mb-5 md:relative md:mb-0'>
 				<img
