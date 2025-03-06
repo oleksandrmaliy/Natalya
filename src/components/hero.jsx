@@ -1,6 +1,6 @@
-import { useState, useLayoutEffect } from 'react';
+import { useState, useEffect } from 'react';
 
-import natalya from './assets/natalya.jpg';
+import natalya from '../assets/natalya.jpg';
 
 const HeroBlock = () => {
 	const [showText, setShowText] = useState(false);
@@ -8,27 +8,25 @@ const HeroBlock = () => {
 
 	const identity = 'hero';
 
-	// useEffect(() => {
-	//   if (effect & !showText) {
-	//     requestAnimationFrame(() => {
-	//       document.getElementById(identity)?.scrollIntoView({
-	//         behavior: "smooth",
-	//         block: "center",
-	//       });
-	//     });
-	//   }
-	// }, [effect, showText]);
-
-	useLayoutEffect(() => {
-		if (effect && !showText) {
-			requestAnimationFrame(() => {
-				document.getElementById(identity)?.scrollIntoView({
-					behavior: 'smooth',
-					block: 'center',
-				});
+	useEffect(() => {
+		if (effect & !showText) {
+			document.getElementById(identity)?.scrollIntoView({
+				behavior: 'smooth',
+				block: 'center',
 			});
 		}
 	}, [effect, showText]);
+
+	// useLayoutEffect(() => {
+	// 	if (effect && !showText) {
+	// 		requestAnimationFrame(() => {
+	// 			document.getElementById(identity)?.scrollIntoView({
+	// 				behavior: 'smooth',
+	// 				block: 'center',
+	// 			});
+	// 		});
+	// 	}
+	// }, [effect, showText]);
 
 	const handleClick = () => {
 		setShowText((prev) => !prev);
